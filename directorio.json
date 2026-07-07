@@ -1,102 +1,35 @@
-fetch("directorio.json")
-.then(r=>r.json())
-.then(datos=>{
+{
+  "NORESTE": {
+    "CD VICTORIA": {
+      "CM CD VICTORIA": []
+    },
+    "MATAMOROS": {
+      "CM MATAMOROS": []
+    },
+    "REYNOSA": {
+      "CM REYNOSA": []
+    }
+  },
 
-const contenedor=document.getElementById("contenedor");
+  "NOROESTE": {
+    "CD JUAREZ": {
+      "CM CD JUAREZ": []
+    },
+    "CHIHUAHUA": {
+      "CM CHIHUAHUA": []
+    },
+    "HERMOSILLO": {
+      "CM HERMOSILLO": []
+    }
+  },
 
-for(let region in datos){
-
-let div=document.createElement("div");
-div.className="region";
-
-div.innerHTML="<h2>"+region+"</h2>";
-
-for(let ciudad in datos[region]){
-
-let boton=document.createElement("button");
-
-boton.innerHTML=ciudad;
-
-boton.onclick=()=>mostrarUbicaciones(ciudad,datos[region][ciudad]);
-
-div.appendChild(boton);
-
-}
-
-contenedor.appendChild(div);
-
-}
-
-});
-
-function mostrarUbicaciones(ciudad,ubicaciones){
-
-tituloModal.innerHTML=ciudad;
-
-contenidoModal.innerHTML="";
-
-for(let nombre in ubicaciones){
-
-let b=document.createElement("button");
-
-b.innerHTML=nombre;
-
-b.onclick=()=>mostrarPersonas(nombre,ubicaciones[nombre]);
-
-contenidoModal.appendChild(b);
-
-}
-
-modal.style.display="block";
-
-}
-
-function mostrarPersonas(nombre,personas){
-
-tituloModal.innerHTML=nombre;
-
-let tabla="<table>";
-
-tabla+="<tr>";
-
-tabla+="<th>Nombre</th>";
-
-tabla+="<th>Puesto</th>";
-
-tabla+="<th>Teléfono</th>";
-
-tabla+="<th>Celular</th>";
-
-tabla+="<th>Correo</th>";
-
-tabla+="</tr>";
-
-personas.forEach(p=>{
-
-tabla+="<tr>";
-
-tabla+="<td>"+p.Nombre+"</td>";
-
-tabla+="<td>"+p.Puesto+"</td>";
-
-tabla+="<td>"+p.Telefono+"</td>";
-
-tabla+="<td>"+p.Celular+"</td>";
-
-tabla+="<td>"+p.Correo+"</td>";
-
-tabla+="</tr>";
-
-});
-
-tabla+="</table>";
-
-contenidoModal.innerHTML=tabla;
-
-}
-
-document.querySelector(".cerrar").onclick=()=>{
-
-modal.style.display="none";
-
+  "OCCIDENTE": {
+    "COLIMA": {
+      "CM COLIMA": []
+    },
+    "PUERTO VALLARTA": {
+      "CM PUERTO VALLARTA": [],
+      "COPE PUERTO VALLARTA": []
+    }
+  }
 }
