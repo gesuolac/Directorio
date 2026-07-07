@@ -1,3 +1,5 @@
+alert("Script cargado");
+
 fetch("directorio.json")
   .then(response => response.json())
   .then(datos => {
