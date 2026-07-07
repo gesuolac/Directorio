@@ -1,31 +1,42 @@
-{
-  "Occidente": {
-    "Puerto Vallarta": {
-      "CM Puerto Vallarta": [
-        {
-          "Nombre":"Pedro",
-          "Puesto":"GPI",
-          "Telefono":"3336739350",
-          "Celular":"3310201684",
-          "Correo":"pedro@empresa.com"
-        },
-        {
-          "Nombre":"Sergio",
-          "Puesto":"GOA",
-          "Telefono":"3111331334",
-          "Celular":"3111120096",
-          "Correo":"sergio@empresa.com"
-        }
-      ],
-      "COPE Puerto Vallarta":[
-        {
-          "Nombre":"Edgar",
-          "Puesto":"Jefe",
-          "Telefono":"3222240999",
-          "Celular":"3221089289",
-          "Correo":"edgar@empresa.com"
-        }
-      ]
+fetch("directorio.json")
+  .then(response => response.json())
+  .then(datos => {
+
+    const contenedor = document.getElementById("contenedor");
+
+    for (const region in datos) {
+
+      const div = document.createElement("div");
+      div.className = "region";
+
+      const titulo = document.createElement("h2");
+      titulo.textContent = region;
+
+      div.appendChild(titulo);
+
+      for (const ciudad in datos[region]) {
+
+        const boton = document.createElement("button");
+        boton.textContent = ciudad;
+
+        boton.onclick = () => mostrarUbicaciones(ciudad, datos[region][ciudad]);
+
+        div.appendChild(boton);
+      }
+
+      contenedor.appendChild(div);
     }
+
+  });
+
+function mostrarUbicaciones(ciudad, ubicaciones) {
+
+  let texto = ciudad + "\n\n";
+
+  for (const ubicacion in ubicaciones) {
+    texto += "• " + ubicacion + "\n";
   }
+
+  alert(texto);
+
 }
