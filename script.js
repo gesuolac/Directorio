@@ -1,0 +1,31 @@
+{
+  "Occidente": {
+    "Puerto Vallarta": {
+      "CM Puerto Vallarta": [
+        {
+          "Nombre":"Pedro",
+          "Puesto":"GPI",
+          "Telefono":"3336739350",
+          "Celular":"3310201684",
+          "Correo":"pedro@empresa.com"
+        },
+        {
+          "Nombre":"Sergio",
+          "Puesto":"GOA",
+          "Telefono":"3111331334",
+          "Celular":"3111120096",
+          "Correo":"sergio@empresa.com"
+        }
+      ],
+      "COPE Puerto Vallarta":[
+        {
+          "Nombre":"Edgar",
+          "Puesto":"Jefe",
+          "Telefono":"3222240999",
+          "Celular":"3221089289",
+          "Correo":"edgar@empresa.com"
+        }
+      ]
+    }
+  }
+}
