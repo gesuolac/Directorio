@@ -1,59 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
-<meta charset="UTF-8">
-
-<title>Directorio CNS</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <title>Directorio CNS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
 <h1>Directorio del Centro Nacional de Supervisión</h1>
-</header>
 
-<div class="contenedor">
+<div id="contenedor"></div>
 
-    <div class="region">
-        <h2>NORESTE</h2>
+<!-- Modal -->
+<div id="modal" class="modal">
 
-        <button onclick="abrirCiudad('CD VICTORIA')">CD VICTORIA</button>
+    <div class="contenido">
 
-        <button onclick="abrirCiudad('MATAMOROS')">MATAMOROS</button>
+        <span class="cerrar">&times;</span>
 
-        <button onclick="abrirCiudad('REYNOSA')">REYNOSA</button>
+        <h2 id="tituloModal"></h2>
 
-        <button onclick="abrirCiudad('TAMPICO')">TAMPICO</button>
-
-    </div>
-
-    <div class="region">
-
-        <h2>OCCIDENTE</h2>
-
-        <button onclick="abrirCiudad('COLIMA')">COLIMA</button>
-
-        <button onclick="abrirCiudad('GUADALAJARA')">GDL CENTRO</button>
-
-        <button onclick="abrirCiudad('PUERTO VALLARTA')">PUERTO VALLARTA</button>
-
-        <button onclick="abrirCiudad('MORELIA')">MORELIA</button>
-
-    </div>
-
-    <div class="region">
-
-        <h2>CENTRO</h2>
-
-        <button onclick="abrirCiudad('LEON')">LEON</button>
-
-        <button onclick="abrirCiudad('QUERETARO')">QUERETARO</button>
-
-        <button onclick="abrirCiudad('PACHUCA')">PACHUCA</button>
+        <div id="contenidoModal"></div>
 
     </div>
 
@@ -62,5 +30,4 @@
 <script src="script.js"></script>
 
 </body>
-
 </html>
