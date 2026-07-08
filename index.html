@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Directorio CNS</title>
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Directorio</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<h1>Directorio del Centro Nacional de Supervisión</h1>
+<div class="contenedor">
 
-<div id="contenedor"></div>
+<h1>📒 Directorio</h1>
 
-<!-- Modal -->
-<div id="modal" class="modal">
+<input
+type="text"
+id="buscar"
+placeholder="Buscar..."
+>
 
-    <div class="contenido">
+<button onclick="buscar()">
+Buscar
+</button>
 
-        <span class="cerrar">&times;</span>
-
-        <h2 id="tituloModal"></h2>
-
-        <div id="contenidoModal"></div>
-
-    </div>
+<div id="resultado"></div>
 
 </div>
 
