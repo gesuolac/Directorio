@@ -1,7 +1,7 @@
 function doGet(e) {
 
 var hoja = SpreadsheetApp
-.openById("https://docs.google.com/spreadsheets/d/1g9nAjq-jTuKQsK9XMmkWj-UAVlqtYO-jsCLutOxv6Rs/edit?gid=0#gid=0")
+.openById("1g9nAjq-jTuKQsK9XMmkWj-UAVlqtYO-jsCLutOxv6Rs")
 .getSheetByName("Hoja1");
 
 var buscar = e.parameter.buscar;
