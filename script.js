@@ -1,44 +1,43 @@
-alert("Script cargado");
+const URL="https://docs.google.com/spreadsheets/d/1g9nAjq-jTuKQsK9XMmkWj-UAVlqtYO-jsCLutOxv6Rs/edit?usp=sharing";
 
-fetch("directorio.json")
-  .then(response => response.json())
-  .then(datos => {
+function buscar(){
 
-    const contenedor = document.getElementById("contenedor");
+let texto=document.getElementById("buscar").value;
 
-    for (const region in datos) {
+fetch(URL+"?buscar="+encodeURIComponent(texto))
 
-      const div = document.createElement("div");
-      div.className = "region";
+.then(res=>res.json())
 
-      const titulo = document.createElement("h2");
-      titulo.textContent = region;
+.then(data=>{
 
-      div.appendChild(titulo);
+let div=document.getElementById("resultado");
 
-      for (const ciudad in datos[region]) {
+if(data.encontrado){
 
-        const boton = document.createElement("button");
-        boton.textContent = ciudad;
+div.innerHTML=`
 
-        boton.onclick = () => mostrarUbicaciones(ciudad, datos[region][ciudad]);
+<div class="card">
 
-        div.appendChild(boton);
-      }
+<h2>${data.A}</h2>
 
-      contenedor.appendChild(div);
-    }
+<p><strong>Puesto:</strong> ${data.B}</p>
 
-  });
+<p><strong>Teléfono:</strong> ${data.C}</p>
 
-function mostrarUbicaciones(ciudad, ubicaciones) {
+<p><strong>Celular:</strong> ${data.D}</p>
 
-  let texto = ciudad + "\n\n";
+<p><strong>Información:</strong> ${data.E}</p>
 
-  for (const ubicacion in ubicaciones) {
-    texto += "• " + ubicacion + "\n";
-  }
+</div>
 
-  alert(texto);
+`;
+
+}else{
+
+div.innerHTML="<div class='error'>No se encontró información.</div>";
+
+}
+
+});
 
 }
