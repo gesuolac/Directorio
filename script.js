@@ -20,15 +20,19 @@ div.innerHTML=`
 
 <h2>${data.A}</h2>
 
-<p><strong>Puesto:</strong> ${data.B}</p>
+<p><strong>Contacto 1:</strong> ${data.B}</p>
 
-<p><strong>Nombre:</strong> ${data.C}</p>
+<p><strong>Telefono:</strong> ${data.C}</p>
 
-<p><strong>Celular:</strong> ${data.D}</p>
+<p><strong>Contacto 2:</strong> ${data.D}</p>
 
-<p><strong>Celular:</strong> ${data.E}</p>
+<p><strong>Telefono:</strong> ${data.E}</p>
 
-<p><strong>Comentarios:</strong> ${data.F}</p>
+<p><strong>Contacto 3:</strong> ${data.F}</p>
+
+<p><strong>Telefono:</strong> ${data.G}</p>
+
+<p><strong>Comentarios:</strong> ${data.H}</p>
 
 </div>
 
