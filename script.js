@@ -26,9 +26,9 @@ div.innerHTML=`
 
 <p><strong>Celular:</strong> ${data.D}</p>
 
-<p><strong>Celular:</strong> ${data.D}</p>
+<p><strong>Celular:</strong> ${data.E}</p>
 
-<p><strong>Comentarios:</strong> ${data.E}</p>
+<p><strong>Comentarios:</strong> ${data.F}</p>
 
 </div>
 
