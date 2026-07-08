@@ -22,11 +22,11 @@ div.innerHTML=`
 
 <p><strong>Puesto:</strong> ${data.B}</p>
 
-<p><strong>Teléfono:</strong> ${data.C}</p>
+<p><strong>Nombre:</strong> ${data.C}</p>
 
 <p><strong>Celular:</strong> ${data.D}</p>
 
-<p><strong>Información:</strong> ${data.E}</p>
+<p><strong>Comentarios:</strong> ${data.E}</p>
 
 </div>
 
