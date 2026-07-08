@@ -1,4 +1,4 @@
-const URL="https://docs.google.com/spreadsheets/d/1g9nAjq-jTuKQsK9XMmkWj-UAVlqtYO-jsCLutOxv6Rs/edit?usp=sharing";
+const URL="https://script.google.com/macros/s/AKfycbwjrhR7sby53TVp3eSUwUCsLcgCTZYFgY9NubOPyZgsGBZWvXaH-x9GwSeDMK6ZVWR_Aw/exec";
 
 function buscar(){
 
