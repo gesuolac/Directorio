@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Directorio</title>
+<title>Directorio WAR ROOM DILADOS</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -14,21 +14,52 @@
 
 <body>
 
-<div class="contenedor">
+<!-- Pantalla de acceso -->
 
-<h1>📒 Directorio WAR ROOM DILADOS</h1>
+<div id="login">
 
-<input
-type="text"
-id="buscar"
-placeholder="Buscar Centro de Trabajo..."
->
+    <div class="login-box">
 
-<button onclick="buscar()">
-Buscar
-</button>
+        <h2>🔒 Acceso al Directorio</h2>
 
-<div id="resultado"></div>
+        <input
+            type="password"
+            id="password"
+            placeholder="Ingrese la contraseña"
+            onkeypress="if(event.key==='Enter') validarPassword()"
+        >
+
+        <button onclick="validarPassword()">
+            Entrar
+        </button>
+
+        <p id="mensajeError"></p>
+
+    </div>
+
+</div>
+
+<!-- Contenido oculto hasta ingresar la contraseña -->
+
+<div id="contenido" style="display:none;">
+
+    <div class="contenedor">
+
+        <h1>📒 Directorio WAR ROOM DILADOS</h1>
+
+        <input
+            type="text"
+            id="buscar"
+            placeholder="Buscar Centro de Trabajo..."
+        >
+
+        <button onclick="buscar()">
+            Buscar
+        </button>
+
+        <div id="resultado"></div>
+
+    </div>
 
 </div>
 
