@@ -20,19 +20,40 @@ div.innerHTML=`
 
 <h2>${data.A}</h2>
 
-<p><strong>Supervisor:</strong> ${data.B}</p>
+<div class="fila">
+    <div class="titulo">Supervisor</div>
+    <div>${data.B}</div>
+</div>
 
-<p><strong>Telefono:</strong> ${data.C}</p>
+<div class="fila">
+    <div class="titulo">Teléfono</div>
+    <div>${data.C}</div>
+</div>
 
-<p><strong>Jefe de COPE:</strong> ${data.D}</p>
+<div class="fila">
+    <div class="titulo">Jefe de COPE</div>
+    <div>${data.D}</div>
+</div>
 
-<p><strong>Telefono:</strong> ${data.E}</p>
+<div class="fila">
+    <div class="titulo">Teléfono</div>
+    <div>${data.E}</div>
+</div>
 
-<p><strong>GOA:</strong> ${data.F}</p>
+<div class="fila">
+    <div class="titulo">GOA</div>
+    <div>${data.F}</div>
+</div>
 
-<p><strong>Telefono:</strong> ${data.G}</p>
+<div class="fila">
+    <div class="titulo">Teléfono</div>
+    <div>${data.G}</div>
+</div>
 
-<p><strong>Comentarios:</strong> ${data.H}</p>
+<div class="fila">
+    <div class="titulo">Comentarios</div>
+    <div>${data.H}</div>
+</div>
 
 </div>
 
