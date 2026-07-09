@@ -20,39 +20,54 @@ div.innerHTML=`
 
 <h2>${data.A}</h2>
 
-<div class="fila">
-    <div class="titulo">Supervisor</div>
-    <div>${data.B}</div>
+<div class="persona">
+
+    <div class="encabezado">
+        👨‍💼 Supervisor
+    </div>
+
+    <div class="nombre">${data.B}</div>
+
+    <div class="telefono">
+        📞 ${data.C}
+    </div>
+
 </div>
 
-<div class="fila">
-    <div class="titulo">Teléfono</div>
-    <div>${data.C}</div>
+<div class="persona">
+
+    <div class="encabezado">
+        👨‍💼 Jefe de COPE
+    </div>
+
+    <div class="nombre">${data.D}</div>
+
+    <div class="telefono">
+        📞 ${data.E}
+    </div>
+
 </div>
 
-<div class="fila">
-    <div class="titulo">Jefe de COPE</div>
-    <div>${data.D}</div>
+<div class="persona">
+
+    <div class="encabezado">
+        👨‍💼 GOA
+    </div>
+
+    <div class="nombre">${data.F}</div>
+
+    <div class="telefono">
+        📞 ${data.G}
+    </div>
+
 </div>
 
-<div class="fila">
-    <div class="titulo">Teléfono</div>
-    <div>${data.E}</div>
-</div>
+<div class="comentarios">
 
-<div class="fila">
-    <div class="titulo">GOA</div>
-    <div>${data.F}</div>
-</div>
+    <strong>📝 Comentarios</strong>
 
-<div class="fila">
-    <div class="titulo">Teléfono</div>
-    <div>${data.G}</div>
-</div>
+    <p>${data.H}</p>
 
-<div class="fila">
-    <div class="titulo">Comentarios</div>
-    <div>${data.H}</div>
 </div>
 
 </div>
