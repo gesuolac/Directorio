@@ -1,29 +1,49 @@
-function doGet(e) {
+const URL="https://script.google.com/macros/s/AKfycbzuLKEYFb2idPggVYneEp00X4m4QkQ3gY079qD-M1SEbiR_XT80-eo0JLftl6bIbFPV6g/exec";
 
-  var hoja = SpreadsheetApp
-    .openById("1g9nAjq-jTuKQsK9XMmkWj-UAVlqtYO-jsCLutOxv6Rs")
-    .getSheetByName("Hoja1");
+function buscar(){
 
-  var buscar = e.parameter.buscar;
+let texto=document.getElementById("buscar").value;
 
-  var datos = hoja.getDataRange().getValues();
+fetch(URL+"?buscar="+encodeURIComponent(texto))
 
-  for (var i = 1; i < datos.length; i++) {
+.then(res=>res.json())
 
-    if (String(datos[i][0]).toLowerCase() == String(buscar).toLowerCase()) {
+.then(data=>{
 
-      return ContentService
-        .createTextOutput(JSON.stringify(datos[i]))
-        .setMimeType(ContentService.MimeType.JSON);
+let div=document.getElementById("resultado");
 
-    }
+if(data.encontrado){
 
-  }
+div.innerHTML=`
 
-  return ContentService
-    .createTextOutput(JSON.stringify({
-      encontrado: false
-    }))
-    .setMimeType(ContentService.MimeType.JSON);
+<div class="card">
+
+<h2>${data.A}</h2>
+
+<p><strong>Supervisor:</strong> ${data.B}</p>
+
+<p><strong>Telefono:</strong> ${data.C}</p>
+
+<p><strong>Jefe de COPE:</strong> ${data.D}</p>
+
+<p><strong>Telefono:</strong> ${data.E}</p>
+
+<p><strong>GOA:</strong> ${data.F}</p>
+
+<p><strong>Telefono:</strong> ${data.G}</p>
+
+<p><strong>Comentarios:</strong> ${data.H}</p>
+
+</div>
+
+`;
+
+}else{
+
+div.innerHTML="<div class='error'>No se encontró información.</div>";
+
+}
+
+});
 
 }
