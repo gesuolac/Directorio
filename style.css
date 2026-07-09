@@ -60,135 +60,104 @@ button:hover{
     margin-top:30px;
     padding:30px;
     border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
 
 }
 
 .card h2{
 
     margin-top:0;
-    margin-bottom:25px;
     color:#0056b3;
-    font-size:38px;
     text-align:center;
-    border-bottom:3px solid #e6eef8;
-    padding-bottom:15px;
+    margin-bottom:30px;
+    font-size:38px;
 
 }
 
 .persona{
 
-    background:#f8f9fb;
-    border-left:8px solid #0066cc;
-    border-radius:12px;
+    background:#f9fbff;
+    border-left:6px solid #0066cc;
     padding:20px;
+    border-radius:12px;
     margin-bottom:20px;
-    box-shadow:0 3px 8px rgba(0,0,0,.08);
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
 
 }
 
 .encabezado{
 
     color:#0066cc;
-    font-size:14px;
+    font-size:16px;
     font-weight:bold;
     text-transform:uppercase;
-    letter-spacing:1px;
     margin-bottom:12px;
 
 }
 
 .nombre{
 
-    font-size:28px;
+    font-size:24px;
     font-weight:bold;
     color:#222;
-    margin-bottom:15px;
+    margin-bottom:12px;
 
 }
 
 .telefono{
 
-    display:inline-block;
-    background:#0066cc;
-    color:white;
-    padding:10px 18px;
-    border-radius:30px;
     font-size:18px;
-    font-weight:bold;
+    color:#444;
 
 }
 
 .comentarios{
 
-    margin-top:25px;
-    background:#fff8e5;
-    border-left:8px solid #ffc107;
+    background:#fff9e5;
+    border-left:6px solid #ffc107;
     padding:20px;
     border-radius:12px;
+    margin-top:30px;
 
 }
 
 .comentarios strong{
 
     display:block;
-    color:#333;
     margin-bottom:10px;
     font-size:18px;
 
 }
 
-.comentarios p{
-
-    margin:0;
-    font-size:17px;
-    line-height:1.6;
-
-}
-
 .error{
 
-    margin-top:25px;
     background:#ffdede;
     color:#b00020;
     padding:18px;
     border-radius:10px;
+    margin-top:20px;
     text-align:center;
-    font-weight:bold;
 
 }
 
-@media (max-width:768px){
+@media(max-width:768px){
 
-    body{
+.card{
 
-        padding:20px;
+padding:20px;
 
-    }
+}
 
-    .card{
+.card h2{
 
-        padding:20px;
+font-size:28px;
 
-    }
+}
 
-    .card h2{
+.nombre{
 
-        font-size:28px;
+font-size:20px;
 
-    }
-
-    .nombre{
-
-        font-size:22px;
-
-    }
-
-    .telefono{
-
-        display:block;
-        text-align:center;
-
-    }
+}
 
 }
