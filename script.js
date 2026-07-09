@@ -20,11 +20,11 @@ div.innerHTML=`
 
 <h2>${data.A}</h2>
 
-<p><strong>sUPERVISOR:</strong> ${data.B}</p>
+<p><strong>Supervisor:</strong> ${data.B}</p>
 
 <p><strong>Telefono:</strong> ${data.C}</p>
 
-<p><strong>JEFE:</strong> ${data.D}</p>
+<p><strong>Jefe de COPE:</strong> ${data.D}</p>
 
 <p><strong>Telefono:</strong> ${data.E}</p>
 
