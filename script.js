@@ -20,15 +20,15 @@ div.innerHTML=`
 
 <h2>${data.A}</h2>
 
-<p><strong>Contacto 1:</strong> ${data.B}</p>
+<p><strong>sUPERVISOR:</strong> ${data.B}</p>
 
 <p><strong>Telefono:</strong> ${data.C}</p>
 
-<p><strong>Contacto 2:</strong> ${data.D}</p>
+<p><strong>JEFE:</strong> ${data.D}</p>
 
 <p><strong>Telefono:</strong> ${data.E}</p>
 
-<p><strong>Contacto 3:</strong> ${data.F}</p>
+<p><strong>GOA:</strong> ${data.F}</p>
 
 <p><strong>Telefono:</strong> ${data.G}</p>
 
